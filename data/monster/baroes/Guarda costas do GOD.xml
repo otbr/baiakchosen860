@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Guarda Costas Do GOD" nameDescription="Guarda Costas Do GOD" race="blood" experience="4000200" speed="400" manacost="0">
+  <health now="6000200" max="6000200"/>  
+  <!--<look type="367" body="78" feet="48" head="39"  legs="114"  addons="3" corpse="6080"/>-->
+  <look type="12" head="20" body="30" legs="114" feet="50" corpse="5527"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>    
+  </flags>
+<attacks>
+<attack name="melee" interval="1000" skill="210" attack="226"/>
+<attack name="poison" interval="2000" chance="50" range="1" radius="1" target="1" min="-1115" max="-1115">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="fire" interval="2000" chance="70" range="7" radius="7" target="1" min="-1700" max="-1900">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+<attack name="death" interval="2000" chance="40" radius="9" target="0" min="-900" max="-1300">
+ <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+<attack name="manadrain" interval="2000" chance="10" radius="10" target="0" min="-1500" max="-1800">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+<attack name="lifedrain" interval="2000" chance="10" radius="14" target="0" min="-1000" max="-1200">
+      <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+    <attack name="poisoncondition" interval="2000" chance="50" length="0" spread="0" min="-1000" max="-2000">
+      <attribute key="areaEffect" value="greenspark"/>
+</attack>
+</attacks>
+  <summons maxSummons="16">
+    <summon name="infernalist" interval="4000" chance="93"/>
+    <summon name="demon" interval="4000" chance="93"/>
+    <summon name="dark toturer" interval="4000" chance="93"/>
+    <summon name="hellfire fighter" interval="4000" chance="93"/>
+    <summon name="medusa" interval="4000" chance="93"/>
+    <summon name="blightwalker" interval="4000" chance="93"/>
+  </summons>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+  <loot capacity="1000">
+<item id="2503" chance="1000"/> 
+<item id="2502" chance="1500"/> 
+<item id="2504" chance="2000"/> 
+<item id="8855" chance="2000"/>
+<item id="7423" chance="2000"/>
+<item id="7958" chance="1000"/> 
+<item id="3983" chance="1500"/> 
+<item id="3972" chance="1000"/>
+<item id="1988" chance="2000">
+<inside>
+<item id="2160" countmax="3" chance="1000"/> 
+<item id="7414" chance="2000"/> 
+<item id="6571" chance="6571"/>
+</inside>
+</item>
+ </loot>
+</monster>

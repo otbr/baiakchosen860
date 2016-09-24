@@ -1,0 +1,4 @@
+<npc name="Hunter" speed="0">
+        <health now="100" max="100"/>
+        <look type="129" body="113" feet="123" head="0"  legs="124"  addons="3" />          
+</npc>

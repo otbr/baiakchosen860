@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<stages>
+	<world id="0" multiplier="1">
+		<stage minlevel="1" maxlevel="299" multiplier="400"/>
+		<stage minlevel="300" maxlevel="349" multiplier="300"/>
+		<stage minlevel="350" maxlevel="399" multiplier="200"/>
+		<stage minlevel="400" maxlevel="449" multiplier="100"/>
+		<stage minlevel="450" maxlevel="499" multiplier="50"/>
+		<stage minlevel="500" maxlevel="549" multiplier="25"/>
+		<stage minlevel="550" maxlevel="599" multiplier="20"/>
+		<stage minlevel="600" maxlevel="699" multiplier="10"/>
+		<stage minlevel="700" maxlevel="749" multiplier="5"/>
+		<stage minlevel="750" maxlevel="799" multiplier="3"/>
+		<stage minlevel="800" multiplier="2"/>
+	</world>
+</stages>

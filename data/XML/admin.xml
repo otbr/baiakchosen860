@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<otadmin enabled="0">
+	<security onlylocalhost="1" maxconnections="2" loginrequired="1" loginpassword="test"/>
+	<encryption required="0">
+		<!-- key type="RSA1024XTEA" file="rsakey.private"/ -->
+	</encryption>
+</otadmin>

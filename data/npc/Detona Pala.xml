@@ -1,0 +1,9 @@
+<npc name="Detona Pala" script="data/npc/scripts/telepaladin.lua" walkinterval="2000" floorchange="0">
+        <health now="100" max="100"/>
+        <look type="152" head="0" body="123" legs="132" feet="115" addons="0"/>
+                <parameters>
+					<parameter key="message_greet" value="Oi! Eu posso te transportar para a quest da vocacao Paladin. Diga {go}." />
+					<parameter key="message_farewell" value="Cya." />
+					<parameter key="message_walkaway" value="Cya." />
+                </parameters>
+</npc>

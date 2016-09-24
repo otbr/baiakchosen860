@@ -1,0 +1,4 @@
+<npc name="Knight" script="data/npc/scripts/Addon/Sul.lua" speed="0">
+        <health now="100" max="100"/>
+          <look type="131" body="81" feet="0" head="59"  legs="132"  addons="3"/>
+</npc>

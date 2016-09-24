@@ -1,0 +1,4 @@
+<npc name="Yalaharian" speed="0">
+        <health now="100" max="100"/>
+        <look type="325" body="67" feet="97" head="0"  legs="124"  addons="3"/>              
+</npc>

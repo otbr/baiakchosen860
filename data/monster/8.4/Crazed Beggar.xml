@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crazed Beggar" nameDescription="a crazed beggar" race="blood" experience="11000" speed="810" manacost="0">
+  <health now="11050" max="11050"/>
+  <look type="153" body="38" feet="97" head="59" legs="38" addons="3" corpse="3058"/>
+  <targetchange interval="2000" chance="18"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="80" attack="120" poison="30"/>	
+    <attack name="lifedrain" interval="2000" chance="16" range="1" min="-190" max="-350">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="death" interval="1000" chance="12" radius="5" target="0" min="-250" max="290">
+      <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+  </attacks>
+  <defenses armor="11" defense="16"/>
+  <immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+  <elements>
+	<element physicalPercent="5"/>
+	<element energyPercent="20"/>
+	<element holyPercent="10"/>
+	<element earth="-10"/>
+	<element death="-15"/>
+  </elements>
+  <voices interval="3000" chance="16">
+    <voice sentence="Eu num intindi uq ele falou!"/>
+    <voice sentence="oi"/>
+    <voice sentence="Upa Upa cavalinho alazao!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="9" chance1="30000" chancemax="0"/> --Gold
+    <item id="2666" countmax="3" chance1="19000"/> --Meat
+    <item id="2237" chance="27000"/> --Dirty Cape
+    <item id="2744" chance="11000"/> --Red Rose
+    <item id="2370" chance="8000"/> --Lute
+    <item id="1987" chance="100000">
+      <inside>
+	    <item id="2690" countmax="1" chance1="11290"/> --Roll
+        <item id="2567" chance="33000"/> --Wooden Spoon
+        <item id="1681" chance="5500"/> --Blue Pillow
+        <item id="2213" chance="1500"/> --Dwarven ring
+		<item id="9808" chance="3500"/> --Rusty Armor
+      </inside>
+    </item>
+  </loot>
+</monster>

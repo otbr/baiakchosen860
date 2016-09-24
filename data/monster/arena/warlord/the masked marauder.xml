@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Masked Marauder" nameDescription="the masked marauder" race="blood" experience="3500" speed="900" manacost="0">
+  <health now="145000" max="145000"/>
+  <look type="234" corpse="7349"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="80"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+     <attack name="melee" interval="1000" skill="180" attack="220"/>
+     <attack name="physical" interval="1000" chance="30" min="-938" max="-1700"> 
+		<attribute key="shootEffect" value="throwingknife"/>
+	 </attack>
+	<attack name="death" interval="1000" chance="15" spread="2" length="4" min="-1000" max="-1620">
+		<attribute key="areaEffect" value="purplenote"/>
+	</attack>
+  </attacks>
+  <defenses armor="45" defense="35"/>
+  <elements>
+	<element holyPercent="-20"/>
+  </elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Didn't you leave your house door open?"/>
+    <voice sentence="Oops, your shoelaces are open!"/>
+  </voices>
+    <script>
+<event name="teleportarena1"/>
+</script>
+</monster>

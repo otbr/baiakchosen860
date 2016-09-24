@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Obliverator" nameDescription="the obliverator" race="fire" experience="6000" speed="900" manacost="0">
+  <health now="190000" max="190000"/>
+  <look type="35" head="20" body="30" legs="40" feet="50" corpse="7349"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="90"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+		<attack name="melee" interval="2000" skill="210" attack="260"/>
+		<attack name="firecondition" interval="1000" chance="7" range="2" min="-800" max="-1200">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="yellowspark"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="7" radius="6" target="0" min="-250" max="-750">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="50" radius="5" target="0" min="-200" max="-500">
+			<attribute key="areaEffect" value="yellowspark"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="4" radius="8" target="0">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-350" max="-850">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="13" length="8" spread="0" min="-500" max="-1000">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="10" length="8" spread="3" min="-300" max="-1500">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+  <defenses armor="40" defense="45">
+    <defense name="healing" interval="4000" chance="5" min="50" max="200">
+		<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+  </defenses>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity invisible="1"/>
+	<immunity paralyze="1"/>
+  </immunities>
+  <elements>
+	<element holyPercent="-20"/>
+	<element deathPercent="15"/>
+	<element energyPercent="50"/>
+  </elements>
+  <summons maxSummons="4">
+    <summon name="fire elemental" interval="2000" chance="25"/>
+  </summons>
+  <voices interval="1000" chance="10">
+    <voice sentence="NO ONE WILL BEAT ME!"/>
+  </voices>
+    <script>
+		<event name="teleportarena1"/>
+	</script>
+</monster>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<servers>
+	<server id="0" name="Example" versionMin="841" versionMax="842" address="127.0.0.1" port="7171"/>
+</servers>

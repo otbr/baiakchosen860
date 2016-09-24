@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mohamed" nameDescription="a mohamed" race="blood" experience="11000" speed="810" manacost="0">
+  <health now="11050" max="11050"/>
+<look type="146" head="93" body="93" legs="57" feet="97" addons="3" corpse="7349"/>
+  <targetchange interval="2000" chance="18"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="83" attack="115"/>
+    <attack name="Explosion" interval="1000" chance="14" range="7" target="1" min="-200" max="-300">
+	<attribute key="shootEffect" value="explosion"/>
+    </attack>
+	<attack name="death" interval="2000" chance="17" range="7" target="1" min="-150" max="-250">
+		<attribute key="shootEffect" value="suddendeath"/>
+	</attack>
+	<attack name="death" interval="1000" chance="12" length="8" spread="0" min="-150" max="-200">
+		<attribute key="areaEffect" value="redspark"/>
+	</attack>
+	<attack name="physical" interval="3000" chance="15" range="7" radius="4" target="1" min="200" max="-295">
+		<attribute key="shootEffect" value="fire"/>
+      	<attribute key="areaEffect" value="redspark"/>
+   	</attack>
+    <attack name="fire" interval="2000" chance="18" length="7" spread="3" min="-170" max="-390">
+      <attribute key="areaEffect" value="explosionarea"/>
+    </attack>    
+</attacks>
+
+  <defenses armor="240" defense="100"> 
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+<voices interval="3000" chance="8">
+		<voice sentence="Ilarie ilarie oh oh oh!" yell="1"/>
+		<voice sentence="xis dê"/>		
+		<voice sentence="Vou comer teu cú, VIADINHO!"/>
+	</voices>
+
+  <loot>
+    <item id="2148" countmax="20" chance1="100000" chancemax="0"/>
+    <item id="2649" chance="6666"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2260" chance="4000"/>
+        <item id="2399" countmax="1" chance1="20000" chancemax="0"/>
+        <item id="2478" chance="3333"/>
+        <item id="2425" chance="2000"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

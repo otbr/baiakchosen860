@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Oriental" nameDescription="Oriental" race="blood" experience="0" speed="0" manacost="0">
+  <health now="10" max="10"/>
+  <look type="146" body="132" feet="56" head="59"  legs="126"  addons="3" corpse="6080"/>    
+  <voices interval="5000" chance="10">
+    <voice sentence="Vem nimim!"/>    
+  </voices>
+</monster>

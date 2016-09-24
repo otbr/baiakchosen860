@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<groups>
+<group id="1" name="Player"/>
+	<group id="2" name="Tutor" flags="1099528404994" customFlags="16386" access="1"/>
+	<group id="3" name="Senior Tutor" flags="1099528470530" customFlags="16386" access="2"/>
+	<group id="4" name="Gamemaster" flags="32375461499775" customFlags="79689759" access="3" violationReasons="19" nameViolationFlags="10" statementViolationFlags="69" depotLimit="3000" maxVips="300" outfit="75"/>
+	<group id="5" name="Senior Gamemaster" flags="23605136184319" customFlags="96467231" access="4" violationReasons="23" nameViolationFlags="170" statementViolationFlags="213" depotLimit="4000" maxVips="400" outfit="302"/>
+	<group id="6" name="GOD" flags="39579197349882" customFlags="67108863" access="5" violationReasons="23" nameViolationFlags="170" statementViolationFlags="213" depotLimit="5000" maxVips="500" outfit="266"/>
+</groups>

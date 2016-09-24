@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Jester" nameDescription="Jester" race="blood" experience="0" speed="0" manacost="0">
+  <health now="10" max="10"/>
+  <look type="273" body="122" feet="19" head="59"  legs="113"  addons="3" corpse="6080"/>    
+  <voices interval="5000" chance="10">
+    <voice sentence="Vem nimim!"/>    
+  </voices>
+</monster>

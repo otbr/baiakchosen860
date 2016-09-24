@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Druid" script="data/npc/scripts/Addon/Sul.lua" speed="0">
+        <health now="100" max="100"/>
+          <look type="144" body="132" feet="0" head="78"  legs="78"  addons="3"/>
+</npc>

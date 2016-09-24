@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<creaturescripts>
+	<!-- SERVIDOR -->
+	<event type="advance" name="AdvanceSave" event="script" value="advancesave.lua"/>
+	<event type="death" name="SkullAmulet" event="script" value="preparedeath.lua"/>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="login" name="AntiMbCrash" event="script" value="antimbcrash.lua"/>	
+	<event type="kill" name="pvpsystem" event="script" value="pvpsystem.lua"/>
+	<event type="login" name="AntiMageBomb" event="script" value="antimagebomb.lua"/>
+	<event type="login" name="CheckMcManager" event="script" value="checkmcmanager.lua"/>
+    <event type="login" name="antiacc" event="script" value="antiacc.lua"/>
+	<event type="login" name="FragsGuildLogin" script="GuildFragsLogin.lua"/>
+	<event type="kill" name="FragsGuildKill" script="GuildFragsKill.lua"/>
+	<event type="login" name="AntiMc" event="script" value="antimc.lua"/>
+    <event type="advance" name="PointSystem" event="script" value="PointsSystem.lua"/>
+	<event type="channeljoin" name="GuildMotd" event="script" value="guildmotd.lua"/>	
+	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="SaveReportBug" script="reportbug.lua"/>
+	<event type="think" name="Idle" event="script" value="idle.lua"/>
+	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
+	<event type="death" name="PlayerDeath" event="script" value="playerdeath.lua"/>
+	<event type="login" name="FirstItems" event="script" value="firstitems.lua"/>      
+	<event type="PrepareDeath" name="pvparena" script="pvparena.lua"/>
+	<event type="attack" name="attackguild" script="attackguild.lua"/>
+	
+	<!-- Cast System by ELF -->
+    <event type="logout" name="livelogout" event="script" value="livelogout.lua"/>
+	
+	<!-- SISTEMAS -->
+	<event type="kill" name="killitem" event="script" value="lootkill.lua"/>
+    <event type="logout" name="perderefeito" event="script" value="perderefeito.lua"/>
+	<event type="statschange" name="zombieevent" event="script" value="zombie event.lua"/>
+    <event type="death" name="guardablood" event="script" value="BloodCreatureGuarda.lua"/>
+    <event type="death" name="arcanjoblood" event="script" value="BloodCreatureAnjo.lua"/>
+    <event type="death" name="morrerblood" event="script" value="BloodCreature.lua"/>
+    <event type="death" name="loginblood" event="script" value="BloodCreature.lua"/>
+    <event type="login" name="BattleLogin" event="script" value="BattleCreatureScript.lua"/>
+    <event type="PrepareDeath" name="BattleDeath" event="script" value="BattleCreatureScript.lua"/>
+    <event type="combat" name="BattleTeam" event="script" value="BattleCreatureScript.lua"/>
+    <event type="death" name="DeathBroadcast" event="script" value="deathBroadcast.lua"/>
+    <event type="statschange" name="dodgecombat" event="script" value="dodgecombat.lua"/>
+    <event type="kill" name="petkill" event="script" value="petkill.lua"/>
+    <event type="death" name="petDeath" event="script" value="petdeath.lua"/>
+    <event type="statschange" name="petStats" event="script" value="petstats.lua"/>
+    <event type="think" name="TiraBattle" event="script" value="tirabattle.lua"/>
+	<event type="login" name="HeadshotLogin" event="script" value="headshot.lua"/>
+	<event type="statschange" name="HeadshotCritical" event="script" value="headshot.lua"/>
+	<event type="logout" name="CTFLogout" event="script" value="CTFMax.lua"/>
+	<event type="combat" name="CTFCombat" event="script" value="CTFMax.lua"/>
+	<event type="attack" name="CTFAttack" event="script" value="CTFMax.lua"/>
+	<event type="statschange" name="CTFDeath" event="script" value="CTFMax.lua"/>
+	<event type="login" name="SurvivalOfTheFittestLogin" script="fittest.lua"/>
+	<event type="death" name="SurvivalOfTheFittest" script="fittest.lua"/>
+	<event type="login" name="AuraLogin" script="auralogin.lua"/>
+	<event type="death" name="deathnoob" event="script" value="noobsay.lua"/>
+	<event type="death" name="huntdeath" event="script" value="death.lua"/>
+	<event type="logout" name="loguthunt" event="script" value="logouthunt.lua"/>
+	<event type="preparedeath" name="forever amulet" event="script" value="aol.lua"/>        
+	<event type="death" name="teleportmonster" script="tpmonster.lua"/>  
+	<event type="login" name="fraglook_register" event="script" value="fraglook.lua"/>
+	<event type="look" name="fraglook" event="script" value="fraglook.lua"/>
+	<event type="death" name="incendio" script="incendioMonster.lua"/>
+	
+	<!-- QUESTS -->
+	<event type="death" name="teleportmonster2" script="tpmonster2.lua"/> <!-- Jack Sparrow -->
+	<event type="death" name="teleportmonster3" script="tpmonster3.lua"/> <!-- Orochimaru -->
+	<event type="death" name="teleportmonster4" script="tpmonster4.lua"/> <!-- Merlin -->
+	<event type="death" name="teleportmonster5" script="tpmonster5.lua"/> <!-- Constantine -->
+	<event type="death" name="teleportmonster6" script="tpmonster6.lua"/> <!-- Conan o Barbaro -->
+	<event type="death" name="teleportmonster7" script="tpmonster7.lua"/> <!-- Konga -->
+	<event type="death" name="teleportmonster8" script="tpmonster8.lua"/> <!-- Esquimoh -->
+	<event type="death" name="teleportmonster9" script="tpmonster9.lua"/> <!-- Lament of Innocence -->
+	<event type="death" name="teleportmonster10" script="tpmonster10.lua"/> <!-- King Arthur -->
+	<event type="death" name="teleportmonster11" script="tpmonster11.lua"/> <!-- Drako -->
+	<event type="death" name="teleportmonster12" script="tpmonster12.lua"/> <!-- Chaos -->
+	<event type="death" name="teleportmonster13" script="tpmonster13.lua"/> <!-- Alucard -->
+	<event type="death" name="teleportmonster14" script="tpmonster14.lua"/> <!-- Symphony of the Night -->
+	<event type="death" name="teleportmonster15" script="tpmonster15.lua"/> <!-- Espirito da Natureza -->
+	<event type="death" name="teleportmonster16" script="tpmonster16.lua"/> <!-- Catatau -->
+	<event type="death" name="teleportmonster17" script="tpmonster17.lua"/> <!-- Moby Dick -->
+	<event type="death" name="teleportmonster18" script="tpmonster18.lua"/> <!-- Coringa -->
+	<event type="death" name="teleportmonster19" script="tpmonster19.lua"/> <!-- Robin Hood -->
+	<event type="death" name="teleportmonster20" script="tpmonster20.lua"/> <!-- Belmont's Revenge -->
+	<event type="death" name="teleportmonster21" script="tpmonster21.lua"/> <!-- Gaia -->
+	<event type="death" name="teleportmonster22" script="tpmonster22.lua"/> <!-- Gentleman -->	
+	<event type="death" name="teleportarena1" script="tparena1.lua"/>	
+	<event type="death" name="teleportmonster23" script="tpmonster23.lua"/> <!-- Massive Energy Elemental -->	
+	<event type="death" name="teleportmonster24" script="tpmonster24.lua"/> <!-- Massive Earth Elemental -->	
+	<event type="death" name="teleportmonster25" script="tpmonster25.lua"/> <!-- Massive Fire Elemental -->	
+	<event type="death" name="teleportmonster26" script="tpmonster26.lua"/> <!-- Massive Water Elemental -->	
+</creaturescripts>

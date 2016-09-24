@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kabuto" nameDescription="a kabuto" race="blood" experience="11000" speed="810" manacost="0">
+  <health now="11050" max="11050"/>
+  <look type="199" head="0" body="0" legs="0" feet="0" corpse="6074"/>
+  <targetchange interval="2000" chance="18"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="90" attack="115"/>
+<attack name="death" interval="1000" chance="12" length="8" spread="0" min="-200" max="-300">
+		<attribute key="areaEffect" value="redspark"/>
+	</attack>
+<attack name="manadrain" interval="1000" chance="15" target="1" range="7" radius="3" min="-150" max="-425">
+		<attribute key="areaEffect" value="teleport"/>		
+		<attribute key="shootEffect" value="energyball"/>
+	</attack>
+    <attack name="melee" interval="2000" chance="15" range="7" radius="3" target="0" min="-280" max="-355">
+  <attribute key="areaEffect" value="blackspark"/>
+</attack>
+</attacks>
+  <defenses armor="25" defense="30"/>
+    <elements>
+		<element firePercent="-10"/>
+		<element earthPercent="20"/>
+		<element physicalPercent="15"/>
+		<element icePercent="20"/>
+  </elements>
+<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Moohhhhooooo!"/>
+    <voice sentence="Bululululu!"/>
+  </voices>
+  <loot>
+    <item id="2666" countmax="4" chance1="33333" chancemax="0"/>
+    <item id="2671" countmax="3" chance1="10000" chancemax="0"/>
+  </loot>
+</monster>

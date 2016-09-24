@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Refinamento" script="data/npc/scripts/defaulttt.lua" walkinterval="2000" floorchange="0" speed="0">
+	<health now="100" max="100"/>
+	<look type="155" head="120" body="0" legs="114" feet="0" addons="3" corpse="2212"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Pedra Refinamento,8306,1000000;Pedra Refinamento,8305,1500000"/>
+	</parameters>
+1</npc>

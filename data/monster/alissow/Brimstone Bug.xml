@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Brimstone Bug" nameDescription="a Brimstone Bug" race="venom" experience="59000" speed="820" manacost="0">
+<health now="81300" max="81300"/>
+<look type="352" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="130" attack="136"/>
+<attack name="manadrain" interval="1000" chance="10" radius="8" target="0" min="-600" max="-700">
+	<attribute key="areaEffect" value="greenshimmer"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-700" max="-850">
+	<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+<attack name="energy" interval="1900" chance="30" length="8" spread="0" min="-900" max="-1100">
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+<attack name="physical" interval="1300" chance="20" range="14" radius="5" target="0" min="-700" max="-880">
+<attribute key="areaEffect" value="poff"/>
+</attack>
+<attack name="melee" interval="1900" chance="15" range="7" radius="4" target="0" min="-800" max="-1250">
+<attribute key="areaEffect" value="energyarea"/>
+</attack>
+<attack name="melee" interval="1500" chance="40" range="7" radius="6" target="0" min="-1050" max="-990">
+<attribute key="areaEffect" value="blackspark"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+<loot>
+<item id="2160" countmax="50" chance="36500"/><!-- crystal coin -->
+<item id="6132" chance="1"/><!-- soft boots -->
+<item id="9933" chance="5"/><!-- firewalker boots -->
+<item id="3972" chance="10"/><!-- vip helmet -->
+<item id="6574" chance="20"/><!-- bar of chocolate -->
+<item id="2477" chance="20"/><!-- knight legs -->
+<item id="7900" chance="20"/><!-- magma monocle -->
+<item id="8883" chance="20"/><!-- windborn colossus armor -->
+</loot>
+</monster>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Donate Gang Member" nameDescription="a donate gang member" race="blood" experience="10000" speed="810" manacost="0">
+  <health now="11050" max="11050"/>
+  <look type="151" head="114" body="19" legs="42" feet="20" corpse="3058"/>
+  <targetchange interval="2000" chance="18"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="93" attack="115"/>
+<attack name="fire" interval="1000" chance="15" range="7" target="1" min="-200" max="-250">
+		<attribute key="areaEffect" value="fireattack"/>
+		<attribute key="shootEffect" value="fire"/>
+	</attack>
+    <attack name="manadrain" interval="1000" chance="15" target="1" range="7" radius="3" min="-100" max="-350">
+		<attribute key="areaEffect" value="teleport"/>		
+		<attribute key="shootEffect" value="energyball"/>
+	</attack>
+    <attack name="death" interval="1000" chance="15" range="7" radius="3" target="1">
+		<attribute key="shootEffect" value="death"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="15" length="8" spread="0" min="-300" max="-350">
+		<attribute key="areaEffect" value="fireattack"/>
+    </attack>
+  </attacks>
+  <defenses armor="190" defense="160"/>
+  <immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+  <elements>
+	<element deathPercent="-10"/>
+  </elements>
+  <voices interval="3000" chance="10">
+    <voice sentence="-_-"/>
+    <voice sentence="Apapa Uuhhhhhhh!"/>
+    <voice sentence="Oooooooooonix!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="23" chance1="65000" chancemax="0"/>
+	<item id="2160" countmax="30" chance1="65000" chancemax="0"/>--Gold
+    <item id="2468" chance="19000"/> --Studded Legs
+    <item id="2666" countmax="2" chance1="33333"/> --Meat
+    <item id="2389" chance="11500"/> --Mace
+	<item id="1987" chance="100000">
+      <inside>
+        <item id="2649" chance="38000"/> --Leather Legs
+        <item id="2689" countmax="2" chance1="20000" chancemax="0"/> --Bread
+        <item id="2209" chance="2500"/> --Club ring
+      </inside>
+    </item>
+  </loot>
+</monster>

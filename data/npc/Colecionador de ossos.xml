@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Colecionador De Ossos" script="data/npc/scripts/Colecionador.lua" walkinterval="2000" lookdir="3" floorchange="0">
+<health now="100" max="100"/>
+<look type="145" head="40" body="37" legs="116" feet="95" addons="3"/>
+  <parameters>
+  <parameter key="message_greet" value="E ae matador. Você trouxe mais {bones} para mim? Preciso de 30 bones, se voce trouxe diga {bones}." />
+  <parameter key="message_farewell" value="Mas que beleza... Quantos ossos" />
+  <parameter key="message_walkaway" value="Yeah, mate mais" />
+  <parameter key="message_onsendtrade" value="Yeah, mate mais" />
+  <parameter key="module_shop" value="1" />
+  </parameters>
+</npc>

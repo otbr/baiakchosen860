@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BAIAK 8.60 | CHAITOSOFT - DESENVOLVEDORES OPEN TIBIA --> 
+<!-- ACOMPANHE AS ATUALIZACOES: http://www.chaitosoft.com/changelog/baiak860 | REPORTAR ERRO: http://www.chaitosoft.com/bugtracker -->
+<globalevents>
+	<!-- SERVIDOR -->
+	<globalevent name="save" interval="1500000" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="1000000" event="script" value="clean.lua"/>
+	<globalevent name="record" type="record" event="script" value="record.lua"/>
+	<globalevent name="shop" interval="30000" script="shop.lua"/>
+	
+	<!-- Cast System by ELF -->
+	<globalevent name="viewers" interval="10000" event="script" value="viewers.lua"/>
+	
+	<!-- EVENTOS -->	             
+	<globalevent name="ctf" time="19:33:00" event="script" value="ctf.lua"/>
+    <globalevent name="globalbattle" interval="60000" event="script" value="globalbattle.lua"/>
+	
+	<!-- OUTROS -->
+	<globalevent name="effects" interval="2000" script="effects.lua" />
+    <globalevent name="HouseClean" time="03:00:00" event="script" value="houseclean.lua"/>
+	
+</globalevents>

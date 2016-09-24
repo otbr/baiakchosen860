@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nightmare" nameDescription="Nightmaree" race="blood" experience="2150" speed="410" manacost="0">
+  <health now="2750" max="2750"/>
+  <look type="268" body="78" feet="132" head="114"  legs="124"  addons="3" corpse="6080"/>
+  <voices interval="5000" chance="10">
+    <voice sentence="Vem nimim!"/>    
+  </voices>  
+</monster>

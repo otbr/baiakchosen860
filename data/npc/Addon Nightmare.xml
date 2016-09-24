@@ -1,0 +1,4 @@
+<npc name="Nightmare" script="data/npc/scripts/Addon/Leste.lua" speed="0">
+        <health now="100" max="100"/>
+          <look type="268" body="78" feet="132" head="114"  legs="124"  addons="3"/>
+</npc>

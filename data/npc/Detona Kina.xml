@@ -1,0 +1,9 @@
+<npc name="Detona Kina" script="data/npc/scripts/teleknight.lua" walkinterval="2000" floorchange="0">
+        <health now="100" max="100"/>
+        <look type="146" head="59" body="125" legs="113" feet="0" addons="1"/>
+                <parameters>
+					<parameter key="message_greet" value="Oi! Eu posso te transportar para a quest da vocacao Knight. Diga {go}." />
+					<parameter key="message_farewell" value="Cya." />
+					<parameter key="message_walkaway" value="Cya." />
+                </parameters>
+</npc>

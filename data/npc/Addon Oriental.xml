@@ -1,0 +1,4 @@
+<npc name="Oriental" script="data/npc/scripts/Addon/Sul.lua" speed="0">
+        <health now="100" max="100"/>
+        <look type="146" body="132" feet="56" head="59"  legs="126"  addons="3"/>               
+</npc>

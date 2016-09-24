@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="Experience Stages Scroll" version="1.0" author="TomCrusher" contact="otland.net" enabled="yes">
+    <action itemid="5957" event="script" value="expstagescroll.lua"/>
+    <creatureevent type="think" name="ExpStage" event="script" value="expstagescroll.lua"/>
+    <creatureevent type="login" name="ExpStageLogin" event="script" value="expstagescroll.lua"/>
+</mod>

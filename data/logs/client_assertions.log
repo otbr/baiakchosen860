@@ -1,0 +1,62 @@
+----- 15/07/2010 21:24:32 - GOD Raymond (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Pentium 4 3.00GHZ
+Video Card: NVIDIA GeForce FX 5200
+Last Packet Types: 163 108 180 106 106 160 133 132 131 140
+Last Packet: 140 191 008 000 064 000 180 024 031 000 089 111 117 032 100 101
+Player Position: [155,57,8]
+Player Name: GOD Raymond (Styller)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 163) (MainWindow = 281249888), reason:
+Communication.cpp 2707: exception occurred, reason:
+Network.cpp 478: exception occurred, reason:
+Utils.cpp 512: assertion failed (Position = 200) (Size = 200), reason:
+Position<=Size-4
+Thu Jul 15 21:23:54 2010
+Debug Assertion 8.60 Utils.cpp 512
+
+----- 15/07/2010 21:28:23 - GOD Raymond (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Pentium 4 3.00GHZ
+Video Card: NVIDIA GeForce FX 5200
+Last Packet Types: 163 160 133 132 131 140 180 140 160 133
+Last Packet: 163 000 000 000 000 000 000 000 000 000 000 000 000 000 000 000
+Player Position: [155,57,8]
+Player Name: GOD Raymond (Styller)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 163) (MainWindow = 282605944), reason:
+Communication.cpp 2707: exception occurred, reason:
+Network.cpp 478: exception occurred, reason:
+Utils.cpp 512: assertion failed (Position = 9) (Size = 9), reason:
+Position<=Size-4
+Thu Jul 15 21:24:36 2010
+Debug Assertion 8.60 Utils.cpp 512
+
+----- 28/07/2010 21:52:39 - GOD Raymond (127.0.0.1) -----
+Comment: 
+Graphic Engine: DirectX9 (2)
+Operating System: Windows XP Professional in BRA
+Processor: Intel Pentium 4 3.00GHZ
+Video Card: NVIDIA GeForce FX 5200
+Last Packet Types: 200 030 109 170 160 160 160 160 160 160
+Last Packet: 200 111 001 078 068 039 076 000 026 128 000 007 000 067 105 116
+Player Position: [180,68,7]
+Player Name: GOD Raymond (Styller)
+Player Action: 049 050 055 046 048 046 048 046 049 058 055 049 055 050
+Player.cpp 361: exception occurred, reason:
+Network.cpp 946: exception occurred (ErrorCode = 0), reason:
+Control.cpp 1331: exception occurred (Type = 200) (MainWindow = 281249888), reason:
+Communication.cpp 3113: exception occurred, reason:
+Communication.cpp 3104: assertion failed (AvailableOutfits = 26), reason:
+In(AvailableOutfits,1,AVAILABLE_OUTFITS)
+Wed Jul 28 21:15:28 2010
+Debug Assertion 8.60 Communication.cpp 3104
+

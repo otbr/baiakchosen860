@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="deathslicer" nameDescription="a deathslicer" race="undead" experience="340" speed="370" manacost="0">
+  <health now="2000" max="2000"/>
+  <look type="102" corpse="2253"/>
+  <targetchange interval="5000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pusheable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="20"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" attack="95" skill="90"/>
+    <attack name="energy" interval="1000" chance="20" radius="3" target="0" min="-150" max="-350">
+      <attribute key="areaEffect" value="yellowspark"/>
+    </attack>
+  </attacks>
+  <defenses armor="1999" defense="1999"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity holy="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity death="0"/>
+    <immunity earth="0"/>
+    <immunity ice="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+</monster>

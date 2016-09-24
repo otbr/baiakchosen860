@@ -1,0 +1,4 @@
+<npc name="Summoner" script="data/npc/scripts/Addon/Leste.lua" speed="0">
+        <health now="100" max="100"/>
+        <look type="133" body="0" feet="78" head="59"  legs="48"  addons="3"/>    
+</npc>

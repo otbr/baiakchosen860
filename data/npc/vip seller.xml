@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Vip Free Itens Seller" script="data/npc/scripts/default.lua" walkinterval="200" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="136" head="20" body="20" legs="114" feet="22" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Vip Free Ring,2036,3000000;Vip Free Helmet,2502,3000000;Vip Free Armor,2503,3000000;Vip Free Legs,2504,3000000;Vip Free Shield,2529,3000000;Vip Free Boots,3982,3000000;Jade Hat,11362,3000000;Super Sudden Death,2263,3000000"/>
+	</parameters>
+</npc>

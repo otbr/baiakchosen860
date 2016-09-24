@@ -1,0 +1,4 @@
+<npc name="Barbarian" script="data/npc/scripts/Addon/Leste.lua" speed="0">
+        <health now="100" max="100"/>
+          <look type="143" body="105" feet="0" head="59"  legs="122"  addons="3"/>    
+</npc>

@@ -1,0 +1,4 @@
+<npc name="Assassin" script="data/npc/scripts/Addon/Leste.lua">
+        <health now="100" max="100"/>
+        <look type="152" body="114" feet="115" head="0"  legs="49"  addons="3" corpse="6080" />                      
+</npc>

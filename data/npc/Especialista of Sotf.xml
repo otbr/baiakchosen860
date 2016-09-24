@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sotf Lover" script="data/npc/scripts/soft.lua" access="5" lookdir="1">
+<health now="1000" max="1000"/>
+<look type="133" head="95" body="86" legs="86" feet="38" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Se voce quiser eu posso reparar a sua soft {boots}." />
+	</parameters>
+</npc>

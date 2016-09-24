@@ -1,0 +1,4 @@
+<npc name="Nobleman" script="data/npc/scripts/Addon/Leste.lua" speed="0">
+        <health now="100" max="100"/>
+        <look type="132" body="102" feet="132" head="59"  legs="48"  addons="3"/>   
+</npc>

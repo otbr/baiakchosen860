@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Clodovil" script="data/npc/scripts/default.lua" access="5" lookdir="1">
+	<health now="100" max="100"/>
+	<look type="128" head="0" body="91" legs="110" feet="94"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="E ai |PLAYERNAME| blz!? Diga {trade} para ver minhas mercadorias."/>		
+		<parameter key="shop_buyable" value="enchanted small ruby,7760,5000;enchanted small emerald,7761,5000;enchanted small saphire,7759,5000;enchanted small amethyst,7762,5000;"/>
+	</parameters>
+</npc>

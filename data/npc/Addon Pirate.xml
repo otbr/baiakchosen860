@@ -1,0 +1,4 @@
+<npc name="Pirate" speed="0">
+        <health now="100" max="100"/>
+        <look type="151" body="122" feet="0" head="79"  legs="94"  addons="3"/>    
+</npc>

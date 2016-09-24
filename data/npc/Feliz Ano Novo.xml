@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Feliz Ano novo" script="data/npc/scripts/default.lua" walkinterval="0" floorchange="0" speed="0">
+	<health now="100" max="100"/>
+	<look type="104" head="20" body="30" legs="40" feet="50" corpse="6033"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Olá |PLAYERNAME|, feliz ano novo! Diga {trade} para ver minhas mercadorias. Para usar os foguetes, basta coloca-los no chão e clicar com o botão direito sobre ele."/>
+		<parameter key="shop_buyable" value="Fireworks Rocket,6576,1;"/>
+	</parameters>
+	<flags>
+<flag summonable="0"/>
+<flag attackable="0"/>
+<flag hostile="0"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+</flags>
+</npc>

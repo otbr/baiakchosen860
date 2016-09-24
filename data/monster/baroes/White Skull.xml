@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[BDM] White Skull" nameDescription="[BDM] White Skull" race="blood" experience="10000" speed="510" manacost="0">
+  <health now="10200" max="10200"/>
+  <look type="129" body="94" feet="0" head="59"  legs="86"  addons="3" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag skull="white"/>
+  </flags>
+    <attacks>
+    <attack name="physical" interval="1000" chance="25" range="7" min="-203" max="-360">
+      <attribute key="shootEffect" value="arrow"/>
+    </attack>
+    <attack name="speed" interval="2000" chance="17" range="7" radius="4" target="1" speedchange="-680" duration="15000">
+      <attribute key="shootEffect" value="energy"/>
+    </attack> 
+    <attack name="death" interval="1500" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+	<attack name="Divine Missile" interval="1200" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="divine missile"/>
+    </attack>
+	<attack name="Ethereal Spear" interval="1000" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="ethereal spear"/>
+    </attack>
+	
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1500" chance="10" speedchange="810" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="utani hur"/>
+    <voice sentence="Vem team, ajuda aqui!" yell="1"/>
+    <voice sentence="Bot!?"/>    
+    <voice sentence="Aaaah..."/>
+  </voices>
+  <loot capacity="1000">
+<item id="2544" countmax="10" chance="3500"/> <!--Arrow-->
+<item id="2456" chance="1500"/> <!--Bow-->
+<item id="2491" chance="2000"/> <!--Crown Helmet-->
+<item id="8891" chance="1000"/> <!--Paladin Armor-->
+<item id="2195" chance="1500"/> <!-- BOH -->
+<item id="2488" chance="2000"/> <!-- Crown Legs-->
+<item id="5949" chance="3000"> <!-- Beach backpack -->
+<inside>
+<item id="2160" countmax="3" chance="1500"/> <!-- Crystal Coins -->
+<item id="2268" chance="1000"/> <!-- SD -->
+<item id="2295" chance="1000"/> <!-- Holy missile rune -->
+<item id="2544" countmax="10" chance="2500"/> <!--Arrow-->
+<item id="8472" countmax="10" chance="2500"/> <!--Great spirit potion-->
+</inside>
+</item> 
+</loot>
+</monster>

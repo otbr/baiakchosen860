@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[BDM] Yellow Skull" nameDescription="[BDM] Yellow Skull" race="blood" experience="10000" speed="810" manacost="0">
+  <health now="10200" max="10200"/>
+  <look type="131" body="125" feet="0" head="59"  legs="86"  addons="1" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag skull="yellow"/>
+  </flags>
+    <attacks>
+	<attack name="melee" interval="1000" skill="100" attack="95"/>
+	<attack name="physical" interval="2100" chance="20" range="7" min="-165" max="-245">      
+    </attack>
+	<attack name="Fierce Berserk" interval="2000" chance="15" range="7" radius="3" target="0" min="-380" max="-455">
+		<attribute key="areaEffect" value="fierce berserk"/>
+	</attack>
+    <attack name="Whirlwind Throw" interval="1500" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="whirlwind throw"/>
+    </attack>	
+	<attack name="Explosion" interval="1000" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="explosion"/>
+    </attack>
+	
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1500" chance="10" speedchange="1010" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="utani hur"/>
+    <voice sentence="Vem team, ajuda aqui!" yell="1"/>
+    <voice sentence="Bot!?"/>    
+    <voice sentence="Aaaah..."/>
+  </voices>
+  <loot capacity="1000">
+<item id="2407" chance="1000"/> <!--Bright Sword-->
+<item id="2535" chance="1500"/> <!--Castle shield-->
+<item id="2497" chance="2000"/> <!--Crusader Helmet-->
+<item id="2476" chance="1000"/> <!--Knight armor-->
+<item id="2002" chance="2000"> <!-- Blue backpack -->
+<inside>
+<item id="2160" countmax="3" chance="1000"/> <!-- Crystal Coins -->
+<item id="2313" chance="2000"/> <!-- Explosion rune -->
+<item id="2261" chance="1500"/> <!-- Destroy field -->
+<item id="8473" countmax="10" chance="2500"/> <!--Ultimate health potion-->
+</inside>
+</item>
+ </loot>
+</monster>

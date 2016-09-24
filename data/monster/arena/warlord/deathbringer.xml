@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Deathbringer" nameDescription="deathbringer" race="undead" experience="5100" speed="900" manacost="0">
+  <health now="170000" max="170000"/>
+  <look type="231" corpse="7349"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="85"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="180" attack="220"/>
+    <attack name="physical" interval="1000" chance="12" range="7" radius="4" target="1" min="-880" max="-1570">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="redspark"/>
+    </attack>
+	<attack name="physical" interval="1100" chance="100" min="-850" max="-1350">
+	<attribute key="shootEffect" value="largerock"/>
+  </attack>
+    <attack name="drowncondition" interval="1000" chance="20" length="8" spread="3" min="-900" max="-1500">
+		<attribute key="areaEffect" value="poff"/>
+    </attack>
+    <attack name="earth" interval="2000" chance="20" length="8" spread="3" min="-950" max="-1550">
+		<attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="18" spread="3" length="8" min="900" max="-1590">
+		<attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+    <attack name="death" interval="1000" chance="15" range="7" min="-980" max="-1690">
+		<attribute key="areaEffect" value="mortarea"/>
+		<attribute key="shootEffect" value="suddendeath"/>
+	</attack>
+  </attacks>
+  <defenses armor="45" defense="45"/>
+  <elements>
+	<element firePercent="35"/>
+	<element icePercent="-15"/>
+  </elements>  
+  <immunities>
+    <immunity death="1"/>
+    <immunity energy="1"/>
+    <immunity invisible="1"/>    
+	<immunity paralyze="1"/>  
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="YOU FOOLS WILL PAY!"/>
+    <voice sentence="YOU ALL WILL DIE!!"/>
+    <voice sentence="DEATH, DESTRUCTION!"/>
+    <voice sentence="I will eat your soul!"/>
+  </voices>
+    <script>
+<event name="teleportarena1"/>
+</script>
+</monster>

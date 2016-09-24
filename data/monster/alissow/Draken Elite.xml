@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Draken Elite" nameDescription="a Draken Elite" race="venom" experience="40200" speed="920" manacost="0">
+<health now="35500" max="35500"/>
+<look type="362" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-500" max="-1000"/>
+<attack name="melee" interval="1500" chance="40" range="7" radius="6" target="0" min="-950" max="-990">
+<attribute key="areaEffect" value="blackspark"/>
+</attack>
+<attack name="melee" interval="1000" chance="34" range="7" radius="1" target="1" min="-820" max="-850">
+<attribute key="shootEffect" value="whirlwindsword"/>
+<attribute key="areaEffect" value="redspark"/>
+</attack>
+<attack name="energy" interval="1900" chance="30" length="8" spread="0" min="-800" max="-1100">
+<attribute key="areaEffect" value="mortarea"/>
+</attack>
+<attack name="physical" interval="1300" chance="20" range="14" radius="5" target="0" min="-500" max="-880">
+<attribute key="areaEffect" value="poff"/>
+</attack>
+<attack name="physical" interval="1500" chance="15" range="7" radius="13" target="0" min="-500" max="-650">
+<attribute key="areaEffect" value="yellowspark"/>
+</attack>
+<attack name="physical" interval="1300" chance="18" radius="14" target="0" min="-500" max="-800">
+<attribute key="areaEffect" value="bluebubble"/>
+</attack>
+<attack name="melee" interval="1900" chance="15" range="7" radius="4" target="0" min="-600" max="-1250">
+<attribute key="areaEffect" value="energyarea"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+</monster>

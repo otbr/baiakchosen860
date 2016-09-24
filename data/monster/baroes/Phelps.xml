@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Phelps" nameDescription="Phelps" race="blood" experience="20000" speed="1010" manacost="0">
+  <health now="50200" max="50200"/>
+  <look type="267" body="0" feet="0" head="0"  legs="0"  addons="0" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag skull="black"/>
+  </flags>
+    <attacks>
+    <attack name="ice" interval="500" chance="10" range="7" radius="3" target="0" min="-720" max="-820">
+	<attribute key="areaEffect" value="icearea"/>
+	</attack>
+    <attack name="death" interval="1000" chance="14" range="7" target="1" min="-685" max="-820">
+	<attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+	<attack name="ice" interval="1000" chance="12" range="7" radius="3" target="0" min="-690" max="-955">
+		<attribute key="areaEffect" value="bubbles"/>
+	</attack>
+	<attack name="ice" interval="1000" chance="12" length="7" spread="0" min="-900" max="-1280">
+		<attribute key="areaEffect" value="bubbles"/>
+	</attack>
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1500" chance="10" speedchange="1000" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot capacity="1000">
+<item id="2187" chance="2500"/> <!--Wand of Inferno-->
+<item id="2536" chance="1500"/> <!--Medusa Shield-->
+<item id="8820" chance="2000"/> <!--Mage Hat-->
+<item id="2656" chance="1000"/> <!--Blue Robe-->
+<item id="2195" chance="1500"/> <!-- BOH -->
+<item id="7730" chance="2000"/> <!-- Blue Legs-->
+ </loot>
+</monster>

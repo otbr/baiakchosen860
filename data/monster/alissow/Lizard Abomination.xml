@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Abomination" nameDescription="a Lizard Abomination" race="venom" experience="900" speed="720" manacost="0">
+<health now="35000" max="35000"/>
+<look type="364" corpse="6068"/>
+<targetchange interval="5000" chance="12"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="1"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="1700" skill="120" attack="136"/>
+<attack name="poison" interval="1000" chance="12" range="1" radius="1" target="1" min="-750" max="-1205">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+<attack name="earth" interval="1000" chance="5" length="9" spread="3" min="-800" max="-935">
+			<attribute key="areaEffect" value="bigplants"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-800" max="-850">
+			<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+<attack name="manadrain" interval="1000" chance="10" radius="8" target="0" min="-700" max="-1400">
+			<attribute key="areaEffect" value="greenshimmer"/>
+</attack>
+<attack name="poison" interval="1000" chance="12" target="1" radius="4" min="800" max="-1100">
+		<attribute key="areaEffect" value="poison"/>
+		<attribute key="shootEffect" value="poison"/>
+</attack>
+</attacks>
+<defenses armor="16" defense="19"/>
+<elements>
+<element physicalPercent="1"/>
+<element holyPercent="1"/>
+<element deathPercent="10"/>
+<element firePercent="-1"/>
+<element energyPercent="-1"/>
+<element icePercent="15"/>
+<element earthPercent="1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Zrp zrp!"/>
+</voices>
+ <loot>
+	<item id="2148" countmax="100" chance1="80000" chancemax="8"/>
+	<item id="2148" countmax="100" chance1="80000" chancemax="10"/>
+	<item id="2160" countmax="3" chance1="100000" chancemax="0"/>
+	<item id="2143" countmax="7" chance1="3000" chancemax="0"/> --White pearl
+	<item id="2514" chance="1650"/> --mastermind shield
+	<item id="7590" chance="7000"/> --great mana potion
+	<item id="7591" chance="7000"/> --great health potion
+	<item id="1987" chance="100000">
+		<inside>
+			<item id="7431" chance="1400"/> --Demonbone
+			<item id="2421" chance="1100"/> --thunder hammer
+			<item id="5947" chance="50100"/> --elane crossbow
+			<item id="7368" countmax="25" chance="100000"/> --stars
+		</inside>
+	</item>
+  </loot>
+</monster>

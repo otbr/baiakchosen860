@@ -1,0 +1,120 @@
+The OTX Server Version: (2.1.70 - 1591) - Codename: (Mycological)
+Compilied with GNU C++ version 4.8.4 for arch 64 Bits at Aug  3 2016 15:55:45
+
+A server developed by: Kaiser, Absolute, Comedinhasss, Emma, Kazbin and The Forgotten Server Developers.
+Visit our forums for updates, support, and resources:
+www.blacktibia.org - www.tibiaking.com - www.otland.net
+
+>> Loading config (config.lua)
+>> Opening logs
+>> Loading Password encryption:
+>>> Using (SHA1) encryption ... (done).
+>> Loading RSA key
+>> Starting SQL connection
+>> Running Database Manager
+> Optimizing table: account_viplist... [success]
+> Optimizing table: accounts... [success]
+> Optimizing table: bans... [success]
+> Optimizing table: environment_killers... [success]
+> Optimizing table: global_storage... [success]
+> Optimizing table: guild_invites... [success]
+> Optimizing table: guild_kills... [success]
+> Optimizing table: guild_ranks... [success]
+> Optimizing table: guild_wars... [success]
+> Optimizing table: guilds... [success]
+> Optimizing table: house_auctions... [success]
+> Optimizing table: house_data... [success]
+> Optimizing table: house_lists... [success]
+> Optimizing table: houses... [success]
+> Optimizing table: killers... [success]
+> Optimizing table: login_history... [success]
+> Optimizing table: market_history... [success]
+> Optimizing table: market_offers... [success]
+> Optimizing table: player_advances... [success]
+> Optimizing table: player_deaths... [success]
+> Optimizing table: player_depotitems... [success]
+> Optimizing table: player_inboxitems... [success]
+> Optimizing table: player_items... [success]
+> Optimizing table: player_killers... [success]
+> Optimizing table: player_namelocks... [success]
+> Optimizing table: player_skills... [success]
+> Optimizing table: player_spells... [success]
+> Optimizing table: player_statements... [success]
+> Optimizing table: player_storage... [success]
+> Optimizing table: player_viplist... [success]
+> Optimizing table: players... [success]
+> Optimizing table: server_config... [success]
+> Optimizing table: server_motd... [success]
+> Optimizing table: server_record... [success]
+> Optimizing table: server_reports... [success]
+> Optimizing table: tile_items... [success]
+> Optimizing table: tile_store... [success]
+> Optimizing table: tiles... [success]
+> Optimizing table: z_changelog... [success]
+>> Loading groups
+>> Loading items (OTB)
+>> Loading items (XML)
+[Warning - Items::loadFromXml] Duplicate registered item with id 8896
+[Warning - Items::loadFromXml] Duplicate registered item with id 8897
+>> Loading outfits
+>> Loading quests
+>> Loading raids
+>> Loading vocations
+>> Loading chat channels
+>> Loading experience stages
+>> Loading mods:
+>>> Loading expscroll.xml ... (done).
+>>> Loading custommonsters.xml ... (done).
+>>> Loading changender_command.xml ... (done).
+>>> Loading buypremium_command.xml ... (done).
+>>> Loading rep_system.xml ... (done), but disabled.
+>>> Loading highscorebook.xml ... (done).
+>>> Loading task.xml ... (done).
+>>> (1) mods were disabled.
+>> Loading script systems:
+>>> Loading weapons... (done).
+>>> Preparing weapons... (done).
+>>> Loading spells... (done).
+>>> Loading actions... [Warning - Actions::registerEvent] Duplicate registered item aid: 42386
+(done).
+>>> Loading talkactions... (done).
+>>> Loading movements... [Warning - MoveEvents::addEvent] Duplicate move event found: 7892
+[Warning - MoveEvents::addEvent] Duplicate move event found: 7891
+(done).
+>>> Loading creaturescripts... (done).
+>>> Loading globalscripts... (done).
+>> Loading monsters
+>> Loading map and spawns:
+>>> Map size: 65000x65000.
+>>> Map descriptions: - "Saved with Remere's Map Editor 2.2" - "No map description available."Duplicate uniqueId 13504
+Duplicate uniqueId 13504
+Duplicate uniqueId 13500
+Duplicate uniqueId 13550
+Duplicate uniqueId 13550
+Duplicate uniqueId 13540
+Duplicate uniqueId 13540
+Duplicate uniqueId 9998
+Duplicate uniqueId 13550
+Duplicate uniqueId 13550
+Duplicate uniqueId 13550
+
+>>> Loading time: 1.482 seconds.
+>>> Parsing time: 0.079 seconds.
+>>> Synchronization time: 0.027 seconds.
+>>> Unserialization time: 0.001 seconds.
+>> Checking world type: Open PvP
+>> Starting to dominate the world... done.
+>> Initializing game state and binding services:
+>> Global IP address(es): 198.50.253.114
+> Bound ports: 7171	7172	
+>> Everything smells good, server is starting up...
+>> MEUOT server Online!
+
+> Broadcasted message: "[CLEAN] O mapa será limpo automaticamente, por favor retire seus items do chao.".
+> CLEAN: Removed 0 items from 0 tiles (0 were marked) in 0 seconds.
+> Broadcasted message: "[CLEAN] A limpeza do mapa foi executada com sucesso.".
+> Broadcasted message: "[SAVE] O servidor sera salvo em 120 segundos podendo gerar um pequeno freeze!".
+> Broadcasted message: "[SAVE] O servidor sera salvo em 30 segundos podendo gerar um pequeno freeze!".
+> Saving server...
+> SAVE: Complete in 0 seconds using binary-tilebased house storage.
+> Broadcasted message: "[CLEAN] O mapa será limpo automaticamente, por favor retire seus items do chao.".

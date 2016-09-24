@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Morte" script="data/npc/scripts/npchunt.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="300"/>
+<parameters>
+<parameter key="message_greet" value="Ola. Para entrar na arena voce deve pagar uma taxa de 500k. Diga {arena} para entrar na quest." />
+<parameter key="message_farewell" value="Ate mais." />
+<parameter key="message_walkaway" value="Ate mais." />
+</parameters>
+</npc>

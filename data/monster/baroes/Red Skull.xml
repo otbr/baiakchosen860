@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[BDM] Red Skull" nameDescription="[BDM] Red Skull" race="blood" experience="10000" speed="810" manacost="0">
+  <health now="10200" max="10200"/>
+  <look type="130" body="132" feet="114" head="57"  legs="114"  addons="1" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag skull="red"/>
+  </flags>
+    <attacks>
+    <attack name="fire" interval="1000" chance="100" range="5" min="-230" max="-260">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="speed" interval="2000" chance="17" range="7" radius="4" target="1" speedchange="-680" duration="15000">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>    
+    <attack name="Energy Wave" interval="2000" chance="12" length="6" spread="3" min="-190" max="-290">
+      <attribute key="areaEffect" value="energy wave"/>
+    </attack>
+    <attack name="Rage of the Skies" interval="3500" chance="30" range="7" radius="7" target="1" min="-250" max="-450">
+		<attribute key="areaEffect" value="rage of the skies"/>
+    </attack>
+    <attack name="death" interval="1000" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1500" chance="10" speedchange="1000" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="utani gran hur"/>
+    <voice sentence="Vem team, ajuda aqui!" yell="1"/>
+    <voice sentence="Bot!?"/>    
+    <voice sentence="Aaaah..."/>
+  </voices>
+  <loot capacity="1000">
+<item id="2187" chance="2500"/> <!--Wand of Inferno-->
+<item id="2536" chance="1500"/> <!--Medusa Shield-->
+<item id="8820" chance="2000"/> <!--Mage Hat-->
+<item id="2656" chance="1000"/> <!--Blue Robe-->
+<item id="2195" chance="1500"/> <!-- BOH -->
+<item id="7730" chance="2000"/> <!-- Blue Legs-->
+<item id="1988" chance="4000"> <!-- Normal backpack-->
+<inside>
+<item id="2160" countmax="3" chance="1000"/> <!-- Crystal Coins -->
+<item id="2268" chance="2000"/> <!-- SD -->
+<item id="2293" chance="1500"/> <!-- MW -->
+<item id="7590" countmax="10" chance="1000"/> <!-- Great mana potion -->
+</inside>
+</item>
+ </loot>
+<summons maxSummons="1">
+  <summon name="Fire elemental" chance="10"/>
+  <summon name="Demon Skeleton" chance="10"/>
+ </summons>
+</monster>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Training" nameDescription="Training" race="undead" experience="100" speed="1" manacost="0">
+<health now="10000000" max="10000000"/>
+<look type="268" head="114" body="77" legs="0" feet="0" addons="2" corpse="6080"/>
+<targetchange interval="10" chance="0"/>
+<strategy attack="100" defense="99999"/>
+<flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="physical" interval="800" chance="100" radius="3" min="-1" max="-2">
+</attack>
+</attacks>
+<defenses armor="0" defense="0">
+      <defense name="healing" interval="1" chance="1" min="2400000" max="2400000"/>
+</defenses>
+<immunities>
+<immunity physical="0"/>
+<immunity energy="0"/>
+<immunity fire="0"/>
+<immunity poison="0"/>
+<immunity lifedrain="0"/>
+<immunity paralyze="0"/>
+<immunity outfit="0"/>
+<immunity drunk="0"/>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="30000" chance="1">
+<voice sentence="Training Skills of Players of the AlphaOT!"/>
+</voices>
+</monster>

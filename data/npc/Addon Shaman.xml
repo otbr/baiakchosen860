@@ -1,0 +1,4 @@
+<npc name="Shaman" speed="0">
+        <health now="100" max="100"/>
+        <look type="158" body="103" feet="79" head="70"  legs="0"  addons="3" />  
+</npc>

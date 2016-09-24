@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="[BDM] Black Skull" nameDescription="[BDM] Black Skull" race="blood" experience="10000" speed="810" manacost="0">
+  <health now="10200" max="10200"/>
+  <look type="128" body="114" feet="57" head="0"  legs="58"  addons="1" corpse="6080"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+    <flag skull="black"/>
+  </flags>
+    <attacks>
+    <attack name="ice" interval="1000" chance="100" range="5" min="-230" max="-260">
+      <attribute key="shootEffect" value="ice"/>
+    </attack>
+    <attack name="speed" interval="2000" chance="17" range="7" radius="4" target="1" speedchange="-680" duration="15000">
+      <attribute key="shootEffect" value="energy"/>
+    </attack>
+    <attack name="Terra Wave" interval="2000" chance="12" length="6" spread="3" min="-190" max="-290">
+      <attribute key="areaEffect" value="terra wave"/>
+    </attack>
+    <attack name="Eternal Winter" interval="3500" chance="30" range="7" radius="7" target="1" min="-350" max="-450">
+		<attribute key="areaEffect" value="eternal winter"/>
+    </attack>
+    <attack name="Sudden Death" interval="1000" chance="14" range="7" target="1" min="-385" max="-420">
+	<attribute key="shootEffect" value="sudden death"/>
+    </attack>    
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="100" max="200">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1500" chance="10" speedchange="1000" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="utani gran hur"/>
+    <voice sentence="Vem team, ajuda aqui!" yell="1"/>
+    <voice sentence="Bot!?"/>    
+    <voice sentence="Aaaah..."/>
+  </voices>
+  <loot capacity="1000">
+<item id="2183" chance="3500"/> <!--Hailstorm Rod-->
+<item id="2534" chance="3500"/> <!--Vampire Shield-->
+<item id="2662" chance="3000"/> <!--Magician Hat-->
+<item id="8871" chance="2000"/> <!--Focus Cape-->
+<item id="2195" chance="1500"/> <!-- BOH -->
+<item id="7730" chance="1000"/> <!-- Blue Legs-->
+<item id="5926" chance="3000"> <!-- Purple backpack-->
+<inside>
+<item id="2160" countmax="3" chance="2000"/> <!-- Crystal Coins -->
+<item id="2268" chance="1500"/> <!-- SD -->
+<item id="2278" chance="1000"/> <!-- Paralyze -->
+<item id="7590" countmax="10" chance="1000"/> <!-- Great mana potion -->
+</inside>
+</item> 
+</loot>
+<summons maxSummons="1">
+  <summon name="Orc Berserker" chance="10"/>
+  <summon name="Demon Skeleton" chance="10"/>
+ </summons>
+</monster>

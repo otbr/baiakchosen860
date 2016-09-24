@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Noob" nameDescription="a Noob" race="blood" experience="100" speed="300" manacost="0">
+  <health now="1000" max="1000"/>
+  <look type="128" body="68" feet="76" head="78" legs="39" addons="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>    
+  </flags>
+    <attacks>
+    <attack name="physical" interval="1000" chance="25" range="0" min="-2" max="-13"/>          
+  </attacks>
+  <defenses armor="22" defense="23">
+    <defense name="healing" interval="1000" chance="12" min="10" max="20">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>    
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="3000" chance="10">
+    <voice sentence="Pls itens, pls!"/>    
+	<voice sentence="Pls, no kill me! ó.ò"/>  
+  </voices>
+<script>
+<event name="deathnoob"/>
+</script>
+</monster>

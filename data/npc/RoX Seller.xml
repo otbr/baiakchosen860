@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Zika Seller" script="data/npc/scripts/defaultt.lua" walkinterval="2000" floorchange="0" speed="0">
+	<health now="100" max="100"/>
+	<look typeex="9605"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Fluffy Santa Backpack,11257,10000;Expedition Backpack,11234,10000;Heart Backpack,11115,10000;Lizard Backpack,11236,10000;Expedition Bag,11235,10000;Minotaur Backpack,11237,10000;Nightmare Doll,11138,100000;Witch Hat,10569,50000;Dragon Scale Boots,11114,500000;Guardian Boots,11234,500000;Yalahari Armor,9776,1500000;Yalahari Leg Piece,9777,1500000;Yalahari Mask,9778,1500000;Spellweaver's Robe,11349,500000;Zaoan Robe,11350,500000;Zaoan Shoes,11297,500000;Zaoan Legs,11298,1500000;Zaoan Sword,11301,500000;Zaoan Armor,11295,500000;Zaoan Helmet,11296,500000;Baiak Sword,8931,500000;
+Baiak Armor,12603,500000;Baiak Legs,12604,500000;Baiak Shield,12605,500000;Baiak Helmet,12606,500000;Boots of Baiak,12607,1500000;Imperium Sword,12610,1500000;Solar axe,8925,1500000;bonebreaker,7428,1500000;Staff of Baiak,12609,1500000;Baiak Cap,12618,1500000;"/>
+	</parameters>
+1</npc>

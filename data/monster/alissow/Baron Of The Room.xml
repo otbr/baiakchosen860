@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Baron Of The Room" nameDescription="Baron Of The Room" race="UNDEAD" experience="11000" speed="1800" manacost="0">
+  <health now="60000" max="60000"/>
+  <look type="12" head="82" body="82" legs="114" feet="114" corpse="6068"/>
+  <targetchange interval="10000" chance="20"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="98"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="1000"/>
+  </flags>
+  <attacks>
+		<attack name="melee" interval="2000" skill="70" attack="70"/>
+		<attack name="manadrain" interval="1000" chance="7" range="7" min="-100" max="-500">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="7" range="7">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="strength" interval="1000" chance="9" range="7">
+			<attribute key="shootEffect" value="largerock"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="13" radius="8" target="0" min="-600" max="-1200">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="10" radius="8" target="0" min="-700" max="-1400">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-1900" duration="60000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="strength" interval="1000" chance="8" radius="5" target="0">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="2" radius="8" target="0" monster="Ferumbras" duration="5000">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="outfit" interval="1000" chance="2" radius="8" target="0" item="3058" duration="5000">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-700" max="-950">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="15" length="8" spread="0" min="-800" max="-850">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="160" defense="160">
+		<defense name="healing" interval="1000" chance="15" min="1000" max="1500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>		
+		<defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="invisible" interval="1000" chance="4" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="1000" chance="17" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="1000" chance="2" item="2421" duration="7000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+  </defenses>
+  <elements>
+	<element firePercent="100"/>
+	<element earthPercent="100"/>
+	<element energyPercent="100"/>
+	<element deathPercent="60"/>
+	<element physicalPercent="40"/>
+	<element icePercent="-25"/>
+  </elements>
+  <immunities>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="6">
+    <summon name="demon" interval="4000" chance="33"/>
+  </summons>
+  <voices interval="5000" chance="30">
+    <voice sentence="VENEZ ICI POUR VOIR SA DEFAITE... PERDANT!" yell="1"/>
+    <voice sentence="JE VAIS ECRASER TOUS COMME S'ILS ETAIENT DES CHIENS!" yell="1"/>
+    <voice sentence="TOUS VONT MOURIR!" yell="1"/>
+    <voice sentence="LES PERDANTS, VOUS SALAUDS!" yell="1"/>
+  </voices>
+  <loot>
+	<item id="2148" countmax="100" chance1="80000" chancemax="8"/>
+	<item id="2148" countmax="100" chance1="80000" chancemax="10"/>
+	<item id="2160" countmax="3" chance1="100000" chancemax="0"/>
+	<item id="2143" countmax="7" chance1="3000" chancemax="0"/> --White pearl
+	<item id="2514" chance="1650"/> --mastermind shield
+	<item id="7590" chance="7000"/> --great mana potion
+	<item id="7591" chance="7000"/> --great health potion
+	<item id="1987" chance="100000">
+		<inside>
+			<item id="7431" chance="1400"/> --Demonbone
+			<item id="2421" chance="1100"/> --thunder hammer
+			<item id="5947" chance="50100"/> --elane crossbow
+			<item id="7368" countmax="25" chance="100000"/> --stars
+		</inside>
+	</item>
+  </loot>
+</monster>

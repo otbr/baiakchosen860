@@ -1,0 +1,4 @@
+<npc name="Norseman" script="data/npc/scripts/Addon/Oeste.lua" speed="0">
+        <health now="100" max="100"/>
+        <look type="251" body="0" feet="94" head="59"  legs="86"  addons="3"/>                
+</npc>
